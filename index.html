@@ -4,13 +4,15 @@ body {
   margin: 0;
 }
 
+/* 主區塊 */
 .container {
   max-width: 500px;
-  margin: auto;
+  margin: 60px auto;
   padding: 40px;
   text-align: center;
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* 標題 */
@@ -18,19 +20,24 @@ h1 {
   color: #d63384;
 }
 
-/* 按鈕列表 */
-.link-list {
-  margin-top: 20px;
+/* 副標題 */
+.subtitle {
+  color: #888;
 }
 
-/* 連結按鈕 */
+/* 連結區 */
+.link-list {
+  margin-top: 25px;
+}
+
+/* 按鈕 */
 .link-btn {
   display: block;
   background: #ff6fa3;
   color: white;
   padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
+  margin: 12px 0;
+  border-radius: 12px;
   text-decoration: none;
   font-size: 16px;
   transition: 0.2s;
@@ -39,5 +46,5 @@ h1 {
 /* 滑鼠效果 */
 .link-btn:hover {
   background: #d63384;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
