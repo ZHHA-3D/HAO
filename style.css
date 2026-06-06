@@ -31,3 +31,36 @@ h1 {
   border-radius: 10px;
   border: 1px solid #ffd6e7;
 }
+/* 按鈕區 */
+.button-group {
+  margin: 20px 0;
+}
+
+/* 大按鈕 */
+.btn {
+  display: inline-block;
+  background: #d63384;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* 小按鈕（作品用） */
+.btn-small {
+  display: inline-block;
+  background: #ff6fa3;
+  color: white;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 滑鼠效果 */
+.btn:hover,
+.btn-small:hover {
+  opacity: 0.8;
+}
