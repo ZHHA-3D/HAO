@@ -1,63 +1,76 @@
 body {
-  font-family: Arial, "Noto Sans TC";
-  background: linear-gradient(#ffe6f0, #fff);
   margin: 0;
+  font-family: "Arial", "Noto Sans TC";
+  background: #f6f1e7; /* 米白紙感 */
+  color: #2f3e2f;
 }
 
-/* 中間容器 */
+/* 主容器 */
 .container {
   max-width: 420px;
   margin: 60px auto;
-  padding: 40px;
+  padding: 35px;
   text-align: center;
-  background: white;
+  background: #fffdf8;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #e6dfd2;
+}
+
+/* 頭像 */
+.avatar {
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 /* 標題 */
 h1 {
-  color: #d63384;
+  margin: 10px 0;
+  color: #3b4f3b; /* 深綠 */
 }
 
-/* 副標題 */
+/* 副標 */
 .subtitle {
-  color: #888;
+  color: #7a6f5a;
+  font-size: 14px;
+  margin-bottom: 25px;
 }
 
-/* 直排按鈕區 */
-.link-list {
+/* 按鈕區 */
+.links {
   display: flex;
-  flex-direction: column; /* 👉 直排關鍵 */
-  gap: 15px;
-  margin-top: 25px;
+  flex-direction: column;
+  gap: 12px;
 }
 
-/* 按鈕外觀（像真的按鍵） */
-.link-btn {
+/* 按鈕 */
+.btn {
   display: block;
-  background: #ff6fa3;
-  color: white;
   padding: 14px;
-  border-radius: 12px;
+  background: #3b4f3b;
+  color: #f6f1e7;
   text-decoration: none;
-  font-size: 16px;
+  border-radius: 12px;
 
-  /* 按鈕立體感 */
-  box-shadow: 0 5px 0 #d63384;
-
-  /* 動畫 */
-  transition: 0.1s;
+  box-shadow: 0 4px 0 #263426;
+  transition: 0.15s;
 }
 
-/* 滑鼠移上去 */
-.link-btn:hover {
+/* hover效果 */
+.btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 7px 0 #d63384;
+  background: #4f6b4f;
 }
 
-/* 按下去效果（重點🔥） */
-.link-btn:active {
-  transform: translateY(4px);
-  box-shadow: 0 1px 0 #d63384;
+/* 按下效果 */
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #263426;
+}
+
+/* footer */
+.footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #9a8f7a;
 }
