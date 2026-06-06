@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>我的個人網站</title>
 
-  <!-- 連接 CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,26 +14,47 @@
     <h1>你好，我是正皓</h1>
     <p class="subtitle">這是我做的第一個網站</p>
 
-    <h2>👤 關於我</h2>
+    <!-- 🟡 按鈕區 -->
+    <div class="button-group">
+      <a class="btn" href="#about">關於我</a>
+      <a class="btn" href="#works">作品</a>
+      <a class="btn" href="#contact">聯絡我</a>
+    </div>
+
+    <!-- 👤 關於我 -->
+    <h2 id="about">👤 關於我</h2>
     <p>
       我正在學習程式、網頁開發。
       這是我第一次做網站。
     </p>
 
-    <h2>🧪 作品</h2>
+    <!-- 🧪 作品 -->
+    <h2 id="works">🧪 作品</h2>
 
     <div class="card">
-      <h3>作品 1</h3>
-      <p>這裡放你的第一個作品</p>
+      <h3>作品 1 - 計算機</h3>
+      <p>我做的一個簡單計算機</p>
+      <a class="btn-small" href="https://example.com" target="_blank">查看作品</a>
     </div>
 
     <div class="card">
-      <h3>作品 2</h3>
-      <p>這裡放你的第二個作品</p>
+      <h3>作品 2 - 待辦清單</h3>
+      <p>可以記錄每天任務的小工具</p>
+      <a class="btn-small" href="https://example.com" target="_blank">查看作品</a>
     </div>
 
-    <h2>📫 聯絡我</h2>
+    <div class="card">
+      <h3>作品 3 - 我的網站</h3>
+      <p>就是你現在看到的這個網站</p>
+      <a class="btn-small" href="#" target="_blank">目前頁面</a>
+    </div>
+
+    <!-- 📫 聯絡我 -->
+    <h2 id="contact">📫 聯絡我</h2>
     <p>Email：a@kimo.com</p>
+
+    <!-- 大按鈕 -->
+    <a class="btn" href="mailto:a@kimo.com">寄信給我</a>
 
   </div>
 
