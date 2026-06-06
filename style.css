@@ -1,18 +1,18 @@
 body {
   font-family: Arial, "Noto Sans TC";
-  background-color: #ffe6f0;
+  background: linear-gradient(#ffe6f0, #fff);
   margin: 0;
 }
 
-/* 主區塊 */
+/* 中間容器 */
 .container {
-  max-width: 500px;
+  max-width: 420px;
   margin: 60px auto;
   padding: 40px;
   text-align: center;
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* 標題 */
@@ -25,26 +25,39 @@ h1 {
   color: #888;
 }
 
-/* 連結區 */
+/* 直排按鈕區 */
 .link-list {
+  display: flex;
+  flex-direction: column; /* 👉 直排關鍵 */
+  gap: 15px;
   margin-top: 25px;
 }
 
-/* 按鈕 */
+/* 按鈕外觀（像真的按鍵） */
 .link-btn {
   display: block;
   background: #ff6fa3;
   color: white;
-  padding: 12px;
-  margin: 12px 0;
+  padding: 14px;
   border-radius: 12px;
   text-decoration: none;
   font-size: 16px;
-  transition: 0.2s;
+
+  /* 按鈕立體感 */
+  box-shadow: 0 5px 0 #d63384;
+
+  /* 動畫 */
+  transition: 0.1s;
 }
 
-/* 滑鼠效果 */
+/* 滑鼠移上去 */
 .link-btn:hover {
-  background: #d63384;
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #d63384;
+}
+
+/* 按下去效果（重點🔥） */
+.link-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #d63384;
 }
