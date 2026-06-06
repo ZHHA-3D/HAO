@@ -1,6 +1,6 @@
 body {
   font-family: Arial, "Noto Sans TC";
-  background-color:  #eeeeee;
+  background-color: #ffe6f0; /* 淡粉背景 */
   margin: 0;
 }
 
@@ -10,22 +10,24 @@ body {
   margin: auto;
   padding: 40px;
   background: white;
+  border-radius: 12px;
 }
 
 /* 標題 */
 h1 {
-  color: #2c3e50;
+  color: #d63384; /* 深粉紅 */
 }
 
 /* 小標題文字 */
 .subtitle {
-  color: gray;
+  color: #b85c8a; /* 紫粉色 */
 }
 
 /* 作品卡片 */
 .card {
-  background: #f0f0f0;
+  background: #fff0f6; /* 卡片淡粉 */
   padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
+  border: 1px solid #ffd6e7;
 }
