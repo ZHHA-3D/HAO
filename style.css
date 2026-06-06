@@ -1,66 +1,50 @@
 body {
   font-family: Arial, "Noto Sans TC";
-  background-color: #ffe6f0; /* 淡粉背景 */
+  background-color: #ffe6f0;
   margin: 0;
 }
 
-/* 整體內容區塊 */
+/* 主區塊 */
 .container {
-  max-width: 700px;
-  margin: auto;
+  max-width: 500px;
+  margin: 60px auto;
   padding: 40px;
+  text-align: center;
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* 標題 */
 h1 {
-  color: #d63384; /* 深粉紅 */
+  color: #d63384;
 }
 
-/* 小標題文字 */
+/* 副標題 */
 .subtitle {
-  color: #b85c8a; /* 紫粉色 */
+  color: #888;
 }
 
-/* 作品卡片 */
-.card {
-  background: #fff0f6; /* 卡片淡粉 */
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ffd6e7;
-}
-/* 按鈕區 */
-.button-group {
-  margin: 20px 0;
+/* 連結區 */
+.link-list {
+  margin-top: 25px;
 }
 
-/* 大按鈕 */
-.btn {
-  display: inline-block;
-  background: #d63384;
-  color: white;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-/* 小按鈕（作品用） */
-.btn-small {
-  display: inline-block;
+/* 按鈕 */
+.link-btn {
+  display: block;
   background: #ff6fa3;
   color: white;
-  padding: 6px 10px;
-  margin-top: 10px;
-  border-radius: 6px;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 12px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
 /* 滑鼠效果 */
-.btn:hover,
-.btn-small:hover {
-  opacity: 0.8;
+.link-btn:hover {
+  background: #d63384;
+  transform: scale(1.05);
 }
